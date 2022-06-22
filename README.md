@@ -1,3 +1,9 @@
+<h3>Use Gatsby's MongoDB plugin to import a data source</h3>
+<p>Connect AirBnb data stored in a MongoDB Atlas collection to use in a blog. Based off of this guide:</p>
+<a href="https://www.mongodb.com/developer/languages/javascript/gatsby-modern-blog/">https://www.mongodb.com/developer/languages/javascript/gatsby-modern-blog/</a>
+
+<hr>
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.com">
