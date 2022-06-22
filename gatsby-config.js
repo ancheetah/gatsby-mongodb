@@ -6,6 +6,28 @@ module.exports = {
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
+    {
+      resolve: 'gatsby-source-mongodb',
+      options: {
+          // Name of the database and collection where are books reside
+          dbName: 'sample_airbnb',
+          collection: 'listingsAndReviews',
+          server: {
+              address: 'ac-ia8tldx-shard-00-01.we6qhvf.mongodb.net',
+              port: 27017
+          },
+          auth: {
+              user: 'aj-cluster',
+              password: 'password' // TODO: replace with MongoDB Atlas password
+          },
+          extraParams: {
+              replicaSet: 'ac-ia8tldx-shard-00-01',
+              ssl: true,
+              authSource: 'admin',
+              retryWrites: true
+          }
+      }
+  },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
