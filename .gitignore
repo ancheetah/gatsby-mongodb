@@ -1,3 +1,6 @@
+# Hide MongoDB Atlas password
+gatsby-config.js
+
 # Logs
 logs
 *.log
