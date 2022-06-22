@@ -76,6 +76,7 @@ h1 {
   padding: 0;
   line-height: var(--line-height-dense);
   letter-spacing: -0.01em;
+  text-align: center;
 }
 h1 > b {
   color: var(--color-primary);
@@ -221,4 +222,23 @@ pre code:after,
 pre tt:before,
 pre tt:after {
   content: none;
+}
+
+.listings-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap
+}
+
+.listing {
+  width: 25%;
+  margin: 4rem 1rem;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.listing img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
 }
